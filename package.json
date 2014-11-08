@@ -1,0 +1,15 @@
+{
+  "name": "make-better",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "git-validate": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "install": "node install.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
