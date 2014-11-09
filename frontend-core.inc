@@ -6,5 +6,5 @@ JADE_DIR ?= .
 JS_DIR ?= .
 
 STYLUS_FILES ?= $(call find_recursive,$(STYLUS_DIR),*.styl)
-JADE_FILES ?= $(call find_recursive,$(JADE_DIR)*.jade)
-JS_FILES ?= $(call find_recursive,$(JS_DIR)*.js)
+JADE_FILES ?= $(call find_recursive,$(JADE_DIR),*.jade)
+JS_FILES ?= $(call find_recursive,$(JS_DIR),*.js)
