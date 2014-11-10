@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "cssmin": "^0.4.2",
-    "git-validate": "^0.1.0",
+    "git-validate": "^0.1.1",
     "uglify-js": "^2.4.15"
   },
   "devDependencies": {},
