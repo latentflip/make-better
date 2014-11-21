@@ -1,3 +1,5 @@
+NODE_ENV ?= development
+
 # creates minify_js and minify_css recipes, use them like this
 #   in production they will minify, in dev they'll just copy, for speed.
 #
@@ -7,12 +9,12 @@
 # path/to/output.min.js: path/to/input.min.js
 #   $(minify_js)
 
-ifeq ($(NODE_ENV),production)
-    minify_js = uglifyjs $< > $@
-    minify_css = cssmin $< > $@
-else
+ifeq ($(NODE_ENV),development)
     minify_js = cp $< $@
     minify_css = cp $< $@
+else
+    minify_js = uglifyjs $< > $@
+    minify_css = cssmin $< > $@
 endif
 
 
