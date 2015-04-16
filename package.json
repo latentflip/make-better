@@ -9,6 +9,10 @@
     "uglify-js": "^2.4.15"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/latentflip/make-better.git"
+  },  
   "scripts": {
     "install": "node install.js"
   },
